@@ -1,15 +1,16 @@
 :root {
-  --bg: #0f172a;
-  --bg-soft: #111827;
-  --panel: rgba(15, 23, 42, 0.7);
-  --panel-strong: #111827;
-  --card: #ffffff;
-  --text: #e5eefb;
-  --muted: #a7b7d3;
-  --line: rgba(148, 163, 184, 0.18);
-  --accent: #7c9cff;
-  --accent-2: #9ae6b4;
-  --shadow: 0 18px 50px rgba(15, 23, 42, 0.35);
+  --bg: #f7f0df;
+  --bg-soft: #eee3cc;
+  --panel: #fffaf0;
+  --panel-strong: #18233b;
+  --card: #fffaf0;
+  --text: #18233b;
+  --muted: #536078;
+  --line: #18233b;
+  --accent: #f04f3f;
+  --accent-2: #00a7a5;
+  --yellow: #f7c948;
+  --shadow: 8px 8px 0 #18233b;
 }
 
 * {
@@ -23,10 +24,10 @@ html {
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: "DM Sans", sans-serif;
   background:
-    radial-gradient(circle at top left, rgba(124, 156, 255, 0.18), transparent 28%),
-    radial-gradient(circle at bottom right, rgba(154, 230, 180, 0.15), transparent 22%),
+    radial-gradient(circle, rgba(24, 35, 59, 0.09) 1px, transparent 1.5px) 0 0 / 14px 14px,
+    linear-gradient(135deg, rgba(240, 79, 63, 0.08), transparent 38%),
     var(--bg);
   color: var(--text);
   line-height: 1.6;
@@ -49,4 +50,15 @@ h2,
 h3,
 p {
   margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+.brand,
+.button,
+.section-tag,
+.eyebrow {
+  font-family: "Bangers", cursive;
+  letter-spacing: 0.04em;
 }
